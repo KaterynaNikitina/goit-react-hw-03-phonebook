@@ -31,7 +31,8 @@ ContactList.propTypes = {
             id: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
             number: PropTypes.string.isRequired,
-            onClick: PropTypes.func,
         })
     ),
+    onClick: PropTypes.func,
+    
 }

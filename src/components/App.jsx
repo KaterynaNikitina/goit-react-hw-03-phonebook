@@ -32,7 +32,6 @@ class App extends Component {
   }
 
   onFormSubmit = data => {
-    console.log(data);
     const isExistingContact = this.state.contacts.find(
       contact => contact.name.toLowerCase() === data.name.toLowerCase()
     );
@@ -54,7 +53,6 @@ class App extends Component {
   };
 
   handleClick = data => {
-    console.log(data);
     this.setState(prevState => ({
       contacts: prevState.contacts.filter(contact => contact.id !== data),
     }));
@@ -70,7 +68,6 @@ class App extends Component {
     return (
       <div
       style={{
-        // height: '100vh',
         width: '460px',
         marginLeft: 'auto',
         marginRight: 'auto',
